@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" type="text/css" href="D_Clock.css">
+
+    <!-- <style>
+        div,
+        header,
+        section,
+        footer,
+        aside {
+            border: 1px solid #4e4e4e;
+            min-height: 50px;
+        }
+    </style> -->
+</head>
+
+<body>
+   
+    <div id="MyClockDisplay" class="clock container-fluid" onload="showTime()"></div>
+    <!-- <script type="text/javascript">
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM"
+
+            if (h == 0) {
+                h = 12;
+            }
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+            setTimeout(showTime, 1000);
+
+        }
+        showTime();
+    </script> -->
+
+    <script type="text/javascript" src="D_Clock.js"></script>
+</body>
+
+</html>
